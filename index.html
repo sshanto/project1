@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>How To Create Bootstrap 5 Header For eCommerce Website</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <!-- about section css -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <!-- about section style -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+<style>
+/*-- About Us --*/
+.author-img{
+    position: relative;
+}
+.about .author-img:before {
+   content: "";
+   background-color: rgba(0, 0, 0, 0.2);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+.about .container {
+   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+.about .section-title h2 {
+    color: #607d8b;
+}
+.about .section-title p {
+   text-align: left;
+   font-style: italic;
+   color: #666;
+}
+.about .icon-box i {
+   float: left;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70px;
+   height: 70px;
+   background: #f1f7fb;
+   border-radius: 6px;
+   font-size: 26px;
+   color: #ff9800;
+   transition: 0.5s;
+}
+.about .icon-box:hover i {
+   color: #fff;
+   background: #ffc107;
+}
+.about .icon-box .title {
+   margin-left: 95px;
+   font-weight: 700;
+   font-size: 20px;
+}
+.about .icon-box .title a {
+   color: #607d8b;
+   transition: 0.3s;
+   text-decoration: none;
+}
+.about .icon-box .title a:hover {
+    color: #ffc107;
+}
+.about .icon-box .description {
+   margin-left: 95px;
+   line-height: 24px;
+   font-size: 14px;
+}
+
+/*us*/
+.why-us h2 {
+    position: relative;
+    margin-bottom: 35px;
+}
+.why-us h2::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    display: inline-block;
+    background: #FFC107;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    margin: 0 auto;
+}
+
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.5s;
+    position: relative;
+    background-color: #333;
+    max-height: 230px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.why-us .box:hover {
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.why-us .box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition:all ease 1s; 
+}
+.why-us .box:hover img {
+  opacity: 1;
+}
+.why-us .box span {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: #6b6060;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: normal;
+}
+.why-us .box h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #dadada;
+  text-decoration: none;
+}
+.why-us .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.why-us .box:hover span,
+.why-us .box:hover h4 a,
+.why-us .box:hover p {
+    color: #fff;
+}
+
+
+/*form css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    text-decoration: none;
+}
+body {
+    background: #5c2fab;
+}
+a:focus, button:focus {
+    outline: none;
+}
+.login-form {
+    max-width: 470px;
+    background: #673AB7;
+    padding: 30px 60px;
+    margin: 50px auto 0px;
+}
+.logo{
+    margin: 0 auto;
+    display: table;
+}
+.logo img{
+    max-width: 60px;
+}
+.social-btn {
+    display: flex;
+    margin: 40px 0px;
+    padding: 15px 0px;
+    background-color: #5c2fab;
+}
+.social-btn button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: #fff;
+}
+.input-box {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #ffffff;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    color: #5c2fab;
+    border-radius: 4px;
+}
+.require-msg {
+    position: absolute;
+    top: -20%;
+    right: 0px;
+    font-size: 15px;
+    background-color: #FF9800;
+    color: #ffffff;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+.input-box input:focus + .require-msg{
+    display: none;
+}
+.remember-pwd{
+    margin-top: 15px;
+    color: #f4f4f480;
+    overflow: hidden;
+    font-size: 14px;
+}
+.remember-pwd a{
+    color: #f4f4f480;
+    font-size: 14px;
+    float: right;
+}
+.remember{
+    float: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #5c2fab;
+    border-radius: 50px;
+    margin-right: 10px;
+    position: relative;
+    border: 2px solid #fff;
+}
+.checkbox input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.checked {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+    display: none;
+}
+.checkbox input:checked + .checked{
+    display: block;
+}
+.login-btn {
+    width: 100%;
+    margin-top: 30px;
+    background: #5c2fab;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 15px 0px;
+    transition: .3s linear;
+}
+.login-btn.active {
+    background: #ffffff;
+    color: #5c2fab;
+}
+.hide-msg {
+    display: none;
+}
+.policy-link {
+    text-align: center;
+    padding: 20px 0px 0px;
+    color: #f1f1f1;
+    font-size: 14px;
+    display: table;
+    margin: 0 auto;
+}
+.new-account a{
+    color: #f1f1f1;
+    font-size: 14px;
+}
+.new-account{
+    font-size: 14px;
+    text-align: center;
+    color: #f4f4f480;
+    margin: 20px 0;
+}
+
+
+</style>
+    </head>
+    <body>
+      <!-- header section start -->
+      <!-- Header Section -->
+      <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h2 class="text-warning">snshanto.com</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mob-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web designing</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">SEO Analysis</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Explore More</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-warning" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End Header Section -->
+       
+
+      <!-- header section end -->
+      <!-- Banner Section -->
+<section id="banner">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.markuptag.com/images/slider-img-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Web Development</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.markuptag.com/images/slider-img-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Web Designing</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.markuptag.com/images/slider-img-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>App Development</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</section>
+<!-- End Banner Section -->
+
+      <!-- about section sart  -->
+           <!-- == About Us Section === -->
+  <section class="about">
+     <div class="container">
+        <div class="row">
+           <div class="col-lg-5">
+              <div class="author-img">
+                 <img src="images/about.jpg" class="img-fluid" alt="">
+              </div>
+           </div>
+           <div class="col-lg-7 d-flex flex-column justify-content-center">
+              <div class="section-title mt-4">
+                 <h2>About Us</h2>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+              </div>
+              <div class="icon-box">
+                 <i class="fas fa-address-card"></i>
+                 <h4 class="title"><a href="">I am from Bangladesh</a></h4>
+                 <p class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+                 <a href="#" class="btn btn-warning float-right mt-2 mb-2">Read More »</a>
+              </div>
+              <hr>
+              <div class="icon-box">
+                 <i class="fas fa-university"></i>
+                 <h4 class="title"><a href="">Education</a></h4>
+                 <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                 <a href="#" class="btn btn-warning float-right mt-2 mb-2">Read More »</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </section>
+  <!-- End About Us Section -->
+      <!-- about section end -->
+      <!-- Counts Section -->
+<section class="counts-section">
+    <h1 class="mx-auto d-table my-5 text-secondary">container</h1>
+    <div class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counterUp">142</h2>
+                    <h6>Clients</h6>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counterUp">455</h2>
+                    <h6>Projects</h6>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counterUp">4,262</h2>
+                    <h6>Hours Of Support</h6>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <h2 data-toggle="counterUp">25</h2>
+                    <h6>Hard Workers</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <!-- Why Us Section -->
+  <section class="why-us">
+    <div class="container">
+          <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="mt-5 text-center">Why Choose Us</h2>
+          <p class="mb-5 text-center">Why choose us section design HTML is created by using Bootstrap and custom HTML CSS. This our services section cards are more beautiful with pure CSS hover effects.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>01</span>
+            <h4><a href="#">Why Lorem Ipsum</a></h4>
+            <p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
+            <img src="images/aj (2).jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>02</span>
+            <h4><a href="#">Why do we use it</a></h4>
+            <p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <img src="images/us1 1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>03</span>
+            <h4><a href="#">Can I get some</a></h4>
+            <p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <img src="images/us1 2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>04</span>
+            <h4><a href="#">Why Lorem Ipsum</a></h4>
+            <p>There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form</p>
+            <img src="images/us 3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>05</span>
+            <h4><a href="#">Why do we use it</a></h4>
+            <p>There are many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <img src="images/us1 3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="box">
+            <span>06</span>
+            <h4><a href="#">Can I get some</a></h4>
+            <p>There are variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+            <img src="images/us.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Why Us Section -->
+
+  <!-- form section -->
+    <div class="login-form">
+        <a href="#" class="logo"><img src="https://www.markuptag.com/images/white-logo-icon.png" alt="logo"></a>
+
+        <!-- Login by social media -->
+        <div class="social-btn">
+            <button type="button"><i class="fab fa-facebook-f"></i></button>
+            <button type="button"><i class="fab fa-twitter"></i></button>
+            <button type="button"><i class="fab fa-pinterest-p"></i></button>
+            <button type="button"><i class="fab fa-instagram"></i></button>
+        </div>
+        
+        <hr><br>
+
+        <!-- Login by username and password -->
+        <form action="" method="">
+            <div class="input-box">
+                <input type="email" placeholder="Username or Email">
+                <span class="require-msg hide-msg">Required</span>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+                <span class="require-msg hide-msg">Required</span>
+            </div>
+
+            <div class="remember-pwd">
+                <label class="remember">
+                    <span class="checkbox">
+                        <input type="checkbox">
+                        <span class="checked"></span>
+                    </span>Remember me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <input type="submit" value="Login" class="login-btn" disabled>
+            <a href="#" class="policy-link">Our Privacy Policy</a>
+        </form>
+        <p class="new-account">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+   <!-- footer section start -->
+   <div class="bg-light pt-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="widget-title">
+                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Customer support</h3>
+                </div>
+                <h4 class="text-success">01996632791</h4>
+                <p class="text-secondary m-0 mt-3">Mon. - Fri. <b>10:00 - 7:00</b></p>
+                <p class="text-secondary">Sat. - Sun. <b>Off</b></p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget-title">
+                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">About Shop</h3>
+                </div>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget-title">
+                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Our services</h3>
+                </div>
+                <ul>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Order tracking</a></li>
+                    <li><a href="#">Exchanges & returns</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="widget-title">
+                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Newsletter signup</h3>
+                </div>
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <label class="visually-hidden">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <p class="text-center text-white py-1 mt-5 bg-secondary">© Copyright 2021 MarkupTag. All rights reserved.</p>
+    </div>
+</div>
+
+   <!-- footer section end -->
+       
+
+        <!-- Bootstrap JS -->
+        <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+        <!-- font awsome js -->
+        <script type="js/all.min.js"></script>
+        <!-- about section js -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- jQuery Library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Counts JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+              <script type="text/javascript">
+          // jQuery counterUp
+          $('[data-toggle="counterUp"]').counterUp({
+              delay: 15,
+              time: 1500
+          });
+      </script>
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!-- form bootstrp js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+    // Show/Hide required msg
+    $(".input-box input").focusout(function() {
+        if($(this).val() == ""){
+            $(this).siblings().removeClass("hide-msg");
+        }else{
+            $(this).siblings().addClass("hide-msg");
+        }
+    });
+
+    // Login button able and disabled
+    $(".input-box input").keyup(function() {
+        var inputs = $(".input-box input");
+        if(inputs[0].value != "" && inputs[1].value) {
+            $(".login-btn").attr("disabled",false);
+            $(".login-btn").addClass("active");
+        }
+        else {
+            $(".login-btn").attr("disabled",true);
+            $(".login-btn").removeClass("active");
+        }
+    });
+</script>
+    </body>
+</html>
